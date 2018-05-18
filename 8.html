@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function power(val,pow){
+           if (pow !=1){
+               return val*power(val,pow-1);
+           }
+           else {
+               return val;
+           }
+        }
+        var val = +prompt("¬ведите  число");    
+        var pow = +prompt("¬ведите степень числа");
+        alert(power(val,pow));
+	</script>
+</body>
+</html>

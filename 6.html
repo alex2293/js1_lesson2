@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function sum(arg1,arg2){
+        	return arg1+arg2;
+    	}
+    	function dif(arg1,arg2){
+        	return arg1-arg2;
+    	}    
+		function um(arg1,arg2){
+        	return arg1*arg2;
+    	}
+    	function del(arg1,arg2){
+			return arg1/arg2;
+    	}       
+		function mathOperation(arg1,arg2,operation){
+			switch(operation){
+			case 1 : return sum(arg1,arg2);	
+				break;
+			case 2 : return dif(arg1,arg2);
+				break;
+			case 3 : return um(arg1,arg2);
+				break;
+			case 4 : return del(arg1,arg2);	
+				break;
+			default : alert("Ошибка");	
+				break;	
+		}
+    	}        
+		
+    	var arg1 = +prompt("Введите 1 число");    
+    	var arg2 = +prompt("Введите 2 число"); 
+		var operation = +prompt("Введите число от 1 до 4,где 1)сумма;2)разность;3)произведение;4)деление");
+		var rez = mathOperation(arg1,arg2,operation);
+		alert("Результат= "+rez);
+	</script>
+</body>
+</html>
